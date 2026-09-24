@@ -5,3 +5,4 @@ testing, change management and Git workflows.
 
 Name: Jaime De Castro
 Professor: Richard Aviles Lopez
+See CONTRIBUTING.md for branch and commit conventions.
