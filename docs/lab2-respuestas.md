@@ -10,7 +10,11 @@ Porque una descripción general puede explicar lo que se quiere hacer, pero no d
 
 ## 3. ¿Qué ocurre exactamente si intentas hacer git push directamente sobre una branch main protegida? ¿Es un error tuyo o un fallo del sistema?
 
+## 3. ¿Qué ocurre exactamente si intentas hacer git push directamente sobre una branch main protegida? ¿Es un error tuyo o un fallo del sistema?
+
 Si la protección de `main` está configurada para impedir el push directo y no se permite el bypass, GitHub rechaza el `push` y obliga a realizar el cambio mediante una branch y un Pull Request. No es un fallo del sistema, sino precisamente la protección funcionando como se espera.
+
+Si el usuario tiene permisos de administrador y no está activada la opción `Do not allow bypassing the above settings`, GitHub puede permitir que ese administrador se salte la regla. En ese caso, hay que activar esa opción para que la protección también se aplique al administrador.
 
 ## 4. Un compañero te dice: "he aprobado el PR sin mirar los archivos, total ya me fío". ¿Qué riesgo tiene esa forma de revisar?
 
