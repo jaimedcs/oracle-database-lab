@@ -1,0 +1,194 @@
+== Esperando a que oralab-26ai este healthy (max. 5 min) ==
+ intento 1: healthy
+== Estado final ==
+oralab-26ai Up About a minute (healthy)
+== Registro de arranque (docker logs) ==
+Starting Oracle Net Listener.
+Oracle Net Listener started.
+Starting Oracle AI Database instance FREE.
+Oracle AI Database instance FREE started.
+
+The Oracle base remains unchanged with value /opt/oracle
+
+SQL*Plus: Release 23.26.3.0.0 - Production on Sun Sep 27 03:21:25 2026
+Version 23.26.3.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+
+SQL> 
+User altered.
+
+SQL> 
+User altered.
+
+SQL> 
+Session altered.
+
+SQL> 
+User altered.
+
+SQL> Disconnected from Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+#########################
+DATABASE IS READY TO USE!
+#########################
+The following output is now a tail of the alert.log:
+Completed: Pluggable database FREEPDB1 opened read write 
+Completed: ALTER DATABASE OPEN
+2026-09-27T03:21:26.631241+00:00
+FREEPDB1(3):TABLE AUDSYS.AUD$UNIFIED: ADDED INTERVAL PARTITION SYS_P496 (4472) VALUES LESS THAN (TIMESTAMP' 2026-09-28 00:00:00')
+2026-09-27T03:21:26.988959+00:00
+===========================================================
+Dumping current patch information
+===========================================================
+No patches have been applied
+===========================================================
+2026-09-27T03:21:27.363947+00:00
+FREEPDB1(3):Resize operation completed for file# 13, fname /opt/oracle/oradata/FREE/FREEPDB1/sysaux01.dbf, old size 409600K, new size 419840K
+2026-09-27T03:21:30.280741+00:00
+TABLE SYS.WRP$_REPORTS: ADDED AUTOLIST FRAGMENT SYS_P656 (3) VALUES (( 1509902213, TO_DATE(' 2026-09-21 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+TABLE SYS.WRP$_REPORTS_DETAILS: ADDED AUTOLIST FRAGMENT SYS_P657 (3) VALUES (( 1509902213, TO_DATE(' 2026-09-21 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+TABLE SYS.WRP$_REPORTS_TIME_BANDS: ADDED AUTOLIST FRAGMENT SYS_P677 (3) VALUES (( 1509902213, TO_DATE(' 2026-09-21 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+2026-09-27T03:21:40.926476+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790479302 whereas allowed drift is 5000000
+2026-09-27T03:21:43.972378+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790479303 with drift 1000000
+2026-09-27T03:22:07.819040+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790479329 whereas allowed drift is 5000000
+2026-09-27T03:22:10.863074+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790479330 with drift 1000000
+2026-09-27T03:22:35.721389+00:00
+--ATTENTION--
+Time drifted backward by (2000000) micro seconds at 1790479357 whereas allowed drift is 5000000
+2026-09-27T03:22:38.752764+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790479358 with drift 1000000
+2026-09-27T03:23:03.614344+00:00
+--ATTENTION--
+Time drifted backward by (1000000) micro seconds at 1790479384 whereas allowed drift is 5000000
+2026-09-27T03:23:05.643705+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790479385 with drift 1000000
+Stopping container.
+SIGTERM received, shutting down database!
+
+SQL*Plus: Release 23.26.3.0.0 - Production on Sun Sep 27 03:23:21 2026
+Version 23.26.3.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+
+SQL> 2026-09-27T03:23:21.635565+00:00
+Shutting down ORACLE instance (immediate) (OS id: 839)
+Shutdown is initiated by sqlplus@3601d4af5b8d (TNS V1-V3).
+Stopping background process SMCO.
+Shutting down instance: further logons disabled
+2026-09-27T03:23:22.039185+00:00
+Stopping background process CJQ0
+2026-09-27T03:23:22.136639+00:00
+Killed process oracle@3601d4af5b8d (Q003) with pid is 98, OS pid 658
+2026-09-27T03:23:22.136792+00:00
+Killed process oracle@3601d4af5b8d (Q001) with pid is 96, OS pid 654
+Killed process oracle@3601d4af5b8d (Q002) with pid is 97, OS pid 717
+Stopping background process MMNL.
+2026-09-27T03:23:22.137293+00:00
+Process termination requested for pid 658 (Q003) [source = rdbms], [info = 2] [request issued by pid: 839, uid: 54321]
+2026-09-27T03:23:22.138040+00:00
+Process termination requested for pid 717 (Q002) [source = rdbms], [info = 2] [request issued by pid: 839, uid: 54321]
+2026-09-27T03:23:22.138672+00:00
+Process termination requested for pid 662 (db_q005_FREE) [source = rdbms], [info = 2] [request issued by pid: 652, uid: 54321]
+2026-09-27T03:23:22.139406+00:00
+Process termination requested for pid 654 (Q001) [source = rdbms], [info = 2] [request issued by pid: 839, uid: 54321]
+Stopping background process MMON.
+alter pluggable database all close immediate
+2026-09-27T03:23:22.395275+00:00
+FREEPDB1(3):JIT: pid 839 requesting stop
+2026-09-27T03:23:22.402859+00:00
+FREEPDB1(3):Stopped service freepdb1
+Completed: Pluggable database FREEPDB1 closed services=None
+Completed: alter pluggable database all close immediate
+PDB$SEED(2):JIT: pid 839 requesting stop
+License high water mark = 5
+
+Data Pump shutdown in progress
+2026-09-27T03:23:22.611729+00:00
+Process termination requested for pid 564 (PPA7) [source = rdbms], [info = 2] [request issued by pid: 839, uid: 54321]
+2026-09-27T03:23:23.606476+00:00
+ALTER DATABASE CLOSE NORMAL
+alter pluggable database all close immediate
+Completed: alter pluggable database all close immediate
+alter pluggable database all close immediate
+Completed: alter pluggable database all close immediate
+2026-09-27T03:23:23.700891+00:00
+Stopping change tracking
+Starting Oracle Net Listener.
+Oracle Net Listener started.
+Starting Oracle AI Database instance FREE.
+Oracle AI Database instance FREE started.
+
+The Oracle base remains unchanged with value /opt/oracle
+
+SQL*Plus: Release 23.26.3.0.0 - Production on Wed Sep 30 20:17:07 2026
+Version 23.26.3.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+
+SQL> 
+User altered.
+
+SQL> 
+User altered.
+
+SQL> 
+Session altered.
+
+SQL> 
+User altered.
+
+SQL> Disconnected from Oracle AI Database 26ai Free Release 23.26.3.0.0 - Develop, Learn, and Run for Free
+Version 23.26.3.0.0
+#########################
+DATABASE IS READY TO USE!
+#########################
+The following output is now a tail of the alert.log:
+Completed: Pluggable database FREEPDB1 opened read write 
+Completed: ALTER DATABASE OPEN
+2026-09-30T20:17:08.664748+00:00
+FREEPDB1(3):TABLE AUDSYS.AUD$UNIFIED: ADDED INTERVAL PARTITION SYS_P516 (4475) VALUES LESS THAN (TIMESTAMP' 2026-10-01 00:00:00')
+2026-09-30T20:17:21.912117+00:00
+===========================================================
+Dumping current patch information
+===========================================================
+No patches have been applied
+===========================================================
+2026-09-30T20:17:12.973061+00:00
+TABLE SYS.WRP$_REPORTS: ADDED AUTOLIST FRAGMENT SYS_P698 (4) VALUES (( 1509902213, TO_DATE(' 2026-09-28 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+TABLE SYS.WRP$_REPORTS_DETAILS: ADDED AUTOLIST FRAGMENT SYS_P699 (4) VALUES (( 1509902213, TO_DATE(' 2026-09-28 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+TABLE SYS.WRP$_REPORTS_TIME_BANDS: ADDED AUTOLIST FRAGMENT SYS_P702 (4) VALUES (( 1509902213, TO_DATE(' 2026-09-28 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+2026-09-30T20:17:58.551093+00:00
+--ATTENTION--
+Time drifted forward by (14000000) micro seconds at 1790799478 whereas allowed drift is 5000000
+2026-09-30T20:18:00.778383+00:00
+--ATTENTION--
+Time drifted backward by (12000000) micro seconds at 1790799492 whereas allowed drift is 5000000
+2026-09-30T20:18:13.847717+00:00
+--ATTENTION--
+Time stall, backward drift ended at 1790799493 with drift 1000000
