@@ -1,0 +1,84 @@
+>> Aplicando V003__cuentas_esquema_sin_password
+
+Session altered.
+
+
+User altered.
+
+
+User altered.
+
+
+User altered.
+
+
+User altered.
+
+
+User altered.
+
+
+USERNAME	 AUTHENTICATION_TYPE  ACCOUNT_STATUS
+---------------- -------------------- ----------------
+ADMIN_ACADEMIA	 NONE		      OPEN
+ADMIN_CLINICA	 NONE		      OPEN
+ADMIN_FINTECH	 NONE		      OPEN
+ADMIN_LOGISTICA  NONE		      OPEN
+ADMIN_RETAIL	 NONE		      OPEN
+
+>> Migraciones aplicadas. Evidencias en docs/bitacora/lab4/evidencia/spool/
+>> Aplicando V002__datos_demo_academia
+
+Session altered.
+
+
+Session altered.
+
+V002 aplicada.
+
+PL/SQL procedure successfully completed.
+
+== Verificación ==
+
+ESTUDIANTES ASIGNATURAS MATRICULAS
+----------- ----------- ----------
+      20000	     40      60000
+
+1 row selected.
+
+
+ESTUDIANTE_ID DNI		   ESTADO
+------------- -------------------- --------------------
+	  101 00000101X 	   ACTIVO
+
+1 row selected.
+
+>> Migraciones aplicadas. Evidencias en docs/bitacora/lab4/evidencia/spool/
+=== COMPROBAR IDEMPOTENCIA V002 ===
+>> Aplicando V002__datos_demo_academia
+
+Session altered.
+
+
+Session altered.
+
+V002 ya aplicada (20000 estudiantes): no se inserta nada.
+
+PL/SQL procedure successfully completed.
+
+== Verificación ==
+
+ESTUDIANTES ASIGNATURAS MATRICULAS
+----------- ----------- ----------
+      20000	     40      60000
+
+1 row selected.
+
+
+ESTUDIANTE_ID DNI		   ESTADO
+------------- -------------------- --------------------
+	  101 00000101X 	   ACTIVO
+
+1 row selected.
+
+>> Migraciones aplicadas. Evidencias en docs/bitacora/lab4/evidencia/spool/
