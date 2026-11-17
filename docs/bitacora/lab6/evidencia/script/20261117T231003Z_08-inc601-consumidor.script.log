@@ -1,0 +1,7 @@
+== EVIDENCIA alumno=E019 hora=2026-11-17T23:10:03Z origen=08-inc601-consumidor
+== EVIDENCIA contenedor=7b927374e15a dbid=1509902213 arranque=2026-11-17T22:51:21 scn=5432190
+
+ESTUDIANTE_ID ESTADO
+------------- --------------------
+	  101 ACTIVO
+
