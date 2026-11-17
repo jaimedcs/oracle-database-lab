@@ -23,11 +23,11 @@ CÓMO SE RELLENA (léelo y borra este comentario si quieres; el script de evalua
 
 - **Herramienta:** ChatGPT (OpenAI).
 - **Prompt:** Ayudame a organizar la ejecucion del Laboratorio 6 de Oracle utilizando los scripts facilitados por el profesor.
-- **Codigo recibido:** Comandos de terminal para ejecutar los scripts existentes, entre ellos `bash scripts/ops/esperar-healthy.sh 600` y `bash scripts/lab6/05-resumable.sh`.
-- **Donde lo use:** Preparacion del laboratorio y ejecucion de las partes A a H.
-- **Proposito:** Seguir un orden de trabajo, verificar los resultados y registrar evidencias.
-- **Que hace:** Los comandos ejecutan los scripts del material de clase. ChatGPT ayudo a organizarlos y a interpretar las salidas. Los scripts originales proceden del profesor.
-- **Evidencia de ejecucion:** `docs/bitacora/lab6/evidencia/script/20261117T230125Z_05-resumable.script.log`.
+- **Código recibido:** Comandos de terminal para ejecutar los scripts existentes, entre ellos `bash scripts/ops/esperar-healthy.sh 600` y `bash scripts/lab6/05-resumable.sh`.
+- **Dónde lo usé:** Preparacion del laboratorio y ejecucion de las partes A a H.
+- **Propósito:** Seguir un orden de trabajo, verificar los resultados y registrar evidencias.
+- **Qué hace:** Los comandos ejecutan los scripts del material de clase. ChatGPT ayudo a organizarlos y a interpretar las salidas. Los scripts originales proceden del profesor.
+- **Evidencia de ejecución:** `docs/bitacora/lab6/evidencia/script/20261117T230125Z_05-resumable.script.log`.
 
 ## Entrada 2 - Incidente INC-601
 
@@ -64,9 +64,9 @@ CÓMO SE RELLENA (léelo y borra este comentario si quieres; el script de evalua
 
 - **Herramienta:** ChatGPT (OpenAI).
 - **Prompt:** Ayudame a organizar los informes de tres incidentes Oracle, indicando diagnostico, solucion, validacion y medidas preventivas.
-- **Codigo recibido:** No aplica. Se recibio un borrador Markdown.
-- **Donde lo use:** Parte I, docs/bitacora/lab6-guardia.md.
-- **Proposito:** Preparar los informes de los incidentes INC-601, INC-602 e INC-603.
-- **Que hace:** Organiza los resultados de las pruebas y relaciona cada problema con su solucion. El borrador fue preparado con asistencia de ChatGPT y debe revisarse antes de entregarlo.
-- **Evidencia de ejecucion:** docs/bitacora/lab6-guardia.md y los archivos de evidencia 08 de los tres incidentes.
+- **Código recibido:** No aplica. Se recibio un borrador Markdown.
+- **Dónde lo usé:** Parte I, docs/bitacora/lab6-guardia.md.
+- **Propósito:** Preparar los informes de los incidentes INC-601, INC-602 e INC-603.
+- **Qué hace:** Organiza los resultados de las pruebas y relaciona cada problema con su solucion. El borrador fue preparado con asistencia de ChatGPT y debe revisarse antes de entregarlo.
+- **Evidencia de ejecución:** docs/bitacora/lab6-guardia.md y los archivos de evidencia 08 de los tres incidentes.
 
